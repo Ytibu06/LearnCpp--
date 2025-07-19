@@ -123,21 +123,21 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="deque基本使用.cpp" />
-    <ClCompile Include="list基本使用.cpp" />
-    <ClCompile Include="list案例.cpp" />
-    <ClCompile Include="map基本使用.cpp" />
-    <ClCompile Include="queue基本使用.cpp" />
-    <ClCompile Include="set基本使用.cpp" />
-    <ClCompile Include="stack基本使用.cpp" />
-    <ClCompile Include="string01基本使用.cpp" />
-    <ClCompile Include="string02赋值操作.cpp" />
-    <ClCompile Include="string03操作.cpp" />
-    <ClCompile Include="vector01内置数据.cpp" />
-    <ClCompile Include="vector02自定义数据.cpp" />
-    <ClCompile Include="vector03容器嵌套容器.cpp" />
-    <ClCompile Include="vector04基本使用.cpp" />
-    <ClCompile Include="案例01.cpp" />
+    <ClCompile Include="函数对象.cpp" />
+    <ClCompile Include="容器deque基本使用.cpp" />
+    <ClCompile Include="容器list基本使用.cpp" />
+    <ClCompile Include="容器案例02.cpp" />
+    <ClCompile Include="容器map基本使用.cpp" />
+    <ClCompile Include="容器案例03.cpp" />
+    <ClCompile Include="容器queue基本使用.cpp" />
+    <ClCompile Include="容器set基本使用.cpp" />
+    <ClCompile Include="容器stack基本使用.cpp" />
+    <ClCompile Include="容器string基本使用.cpp" />
+    <ClCompile Include="容器vector01内置数据.cpp" />
+    <ClCompile Include="容器vector02自定义数据.cpp" />
+    <ClCompile Include="容器vector03容器嵌套容器.cpp" />
+    <ClCompile Include="容器vector基本使用.cpp" />
+    <ClCompile Include="容器案例01.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

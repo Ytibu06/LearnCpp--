@@ -16,52 +16,55 @@
     <Filter Include="源文件\容器">
       <UniqueIdentifier>{3197ebbd-8ba0-4aef-9766-854b7f6ead99}</UniqueIdentifier>
     </Filter>
+    <Filter Include="源文件\函数对象">
+      <UniqueIdentifier>{ff64a88e-2313-4795-a8f3-3effbc853ce9}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="vector01内置数据.cpp">
+    <ClCompile Include="容器vector01内置数据.cpp">
       <Filter>源文件\容器</Filter>
     </ClCompile>
-    <ClCompile Include="vector02自定义数据.cpp">
+    <ClCompile Include="容器vector02自定义数据.cpp">
       <Filter>源文件\容器</Filter>
     </ClCompile>
-    <ClCompile Include="vector03容器嵌套容器.cpp">
+    <ClCompile Include="容器vector03容器嵌套容器.cpp">
       <Filter>源文件\容器</Filter>
     </ClCompile>
-    <ClCompile Include="string01基本使用.cpp">
+    <ClCompile Include="容器string基本使用.cpp">
       <Filter>源文件\容器</Filter>
     </ClCompile>
-    <ClCompile Include="string02赋值操作.cpp">
+    <ClCompile Include="容器vector基本使用.cpp">
       <Filter>源文件\容器</Filter>
     </ClCompile>
-    <ClCompile Include="string03操作.cpp">
+    <ClCompile Include="容器deque基本使用.cpp">
       <Filter>源文件\容器</Filter>
     </ClCompile>
-    <ClCompile Include="vector04基本使用.cpp">
+    <ClCompile Include="容器案例01.cpp">
       <Filter>源文件\容器</Filter>
     </ClCompile>
-    <ClCompile Include="deque基本使用.cpp">
+    <ClCompile Include="容器queue基本使用.cpp">
       <Filter>源文件\容器</Filter>
     </ClCompile>
-    <ClCompile Include="案例01.cpp">
+    <ClCompile Include="容器stack基本使用.cpp">
       <Filter>源文件\容器</Filter>
     </ClCompile>
-    <ClCompile Include="queue基本使用.cpp">
+    <ClCompile Include="容器list基本使用.cpp">
       <Filter>源文件\容器</Filter>
     </ClCompile>
-    <ClCompile Include="stack基本使用.cpp">
+    <ClCompile Include="容器set基本使用.cpp">
       <Filter>源文件\容器</Filter>
     </ClCompile>
-    <ClCompile Include="list基本使用.cpp">
+    <ClCompile Include="容器map基本使用.cpp">
       <Filter>源文件\容器</Filter>
     </ClCompile>
-    <ClCompile Include="set基本使用.cpp">
+    <ClCompile Include="容器案例02.cpp">
       <Filter>源文件\容器</Filter>
     </ClCompile>
-    <ClCompile Include="map基本使用.cpp">
+    <ClCompile Include="容器案例03.cpp">
       <Filter>源文件\容器</Filter>
     </ClCompile>
-    <ClCompile Include="list案例.cpp">
-      <Filter>源文件\容器</Filter>
+    <ClCompile Include="函数对象.cpp">
+      <Filter>源文件\函数对象</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
