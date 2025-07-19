@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="源文件\容器">
+      <UniqueIdentifier>{3197ebbd-8ba0-4aef-9766-854b7f6ead99}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="vector01内置数据.cpp">
+      <Filter>源文件\容器</Filter>
+    </ClCompile>
+    <ClCompile Include="vector02自定义数据.cpp">
+      <Filter>源文件\容器</Filter>
+    </ClCompile>
+    <ClCompile Include="vector03容器嵌套容器.cpp">
+      <Filter>源文件\容器</Filter>
+    </ClCompile>
+    <ClCompile Include="string01基本使用.cpp">
+      <Filter>源文件\容器</Filter>
+    </ClCompile>
+    <ClCompile Include="string02赋值操作.cpp">
+      <Filter>源文件\容器</Filter>
+    </ClCompile>
+    <ClCompile Include="string03操作.cpp">
+      <Filter>源文件\容器</Filter>
+    </ClCompile>
+    <ClCompile Include="vector04基本使用.cpp">
+      <Filter>源文件\容器</Filter>
+    </ClCompile>
+    <ClCompile Include="deque基本使用.cpp">
+      <Filter>源文件\容器</Filter>
+    </ClCompile>
+    <ClCompile Include="案例01.cpp">
+      <Filter>源文件\容器</Filter>
+    </ClCompile>
+    <ClCompile Include="queue基本使用.cpp">
+      <Filter>源文件\容器</Filter>
+    </ClCompile>
+    <ClCompile Include="stack基本使用.cpp">
+      <Filter>源文件\容器</Filter>
+    </ClCompile>
+    <ClCompile Include="list基本使用.cpp">
+      <Filter>源文件\容器</Filter>
+    </ClCompile>
+    <ClCompile Include="set基本使用.cpp">
+      <Filter>源文件\容器</Filter>
+    </ClCompile>
+    <ClCompile Include="map基本使用.cpp">
+      <Filter>源文件\容器</Filter>
+    </ClCompile>
+    <ClCompile Include="list案例.cpp">
+      <Filter>源文件\容器</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
