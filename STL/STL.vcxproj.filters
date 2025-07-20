@@ -19,6 +19,9 @@
     <Filter Include="源文件\函数对象">
       <UniqueIdentifier>{ff64a88e-2313-4795-a8f3-3effbc853ce9}</UniqueIdentifier>
     </Filter>
+    <Filter Include="源文件\算法">
+      <UniqueIdentifier>{52d823c5-ac39-4c8e-990d-cc75aca5a6fe}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="容器vector01内置数据.cpp">
@@ -65,6 +68,27 @@
     </ClCompile>
     <ClCompile Include="函数对象.cpp">
       <Filter>源文件\函数对象</Filter>
+    </ClCompile>
+    <ClCompile Include="函数对象内建仿函数.cpp">
+      <Filter>源文件\函数对象</Filter>
+    </ClCompile>
+    <ClCompile Include="算法遍历.cpp">
+      <Filter>源文件\算法</Filter>
+    </ClCompile>
+    <ClCompile Include="算法查找.cpp">
+      <Filter>源文件\算法</Filter>
+    </ClCompile>
+    <ClCompile Include="算法排序.cpp">
+      <Filter>源文件\算法</Filter>
+    </ClCompile>
+    <ClCompile Include="算法拷贝与替换.cpp">
+      <Filter>源文件\算法</Filter>
+    </ClCompile>
+    <ClCompile Include="算法算术生成.cpp">
+      <Filter>源文件\算法</Filter>
+    </ClCompile>
+    <ClCompile Include="算法集合算法.cpp">
+      <Filter>源文件\算法</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

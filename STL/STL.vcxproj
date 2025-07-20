@@ -124,6 +124,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="函数对象.cpp" />
+    <ClCompile Include="函数对象内建仿函数.cpp" />
     <ClCompile Include="容器deque基本使用.cpp" />
     <ClCompile Include="容器list基本使用.cpp" />
     <ClCompile Include="容器案例02.cpp" />
@@ -138,6 +139,12 @@
     <ClCompile Include="容器vector03容器嵌套容器.cpp" />
     <ClCompile Include="容器vector基本使用.cpp" />
     <ClCompile Include="容器案例01.cpp" />
+    <ClCompile Include="算法拷贝与替换.cpp" />
+    <ClCompile Include="算法排序.cpp" />
+    <ClCompile Include="算法查找.cpp" />
+    <ClCompile Include="算法算术生成.cpp" />
+    <ClCompile Include="算法遍历.cpp" />
+    <ClCompile Include="算法集合算法.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
