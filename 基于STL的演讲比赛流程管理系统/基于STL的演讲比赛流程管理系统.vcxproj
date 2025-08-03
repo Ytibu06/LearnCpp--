@@ -124,6 +124,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Manage.cpp" />
+    <ClCompile Include="speaker.h" />
     <ClCompile Include="SpeechManager.cpp" />
   </ItemGroup>
   <ItemGroup>
