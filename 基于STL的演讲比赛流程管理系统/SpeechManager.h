@@ -4,6 +4,10 @@
 #include <map>
 #include <functional>
 #include <numeric>
+#include <algorithm>
+#include <deque>
+#include <string>
+#include <fstream>
 #include "speaker.h"
 using namespace std;
 
@@ -17,6 +21,8 @@ public:
 	vector<int> vectory;  //存储晋级选手编号
 	map<int, speaker> info;  //存储选手信息，key为选手编号，value为选手对象
 	int Index;  //记录比赛轮次
+	map<int, vector<string>> Record;  //存储比赛记录，key为轮次，value为选手信息
+	bool fileIsEmpty;  //记录文件是否为空
 
 	//构造函数
 	SpeechManager();
@@ -44,6 +50,9 @@ public:
 
 	//查看比赛分数
 	void showScore();
+
+	//保存比赛记录
+	void saveRecord();
 
 	//查看往届记录
 	void showRecord();

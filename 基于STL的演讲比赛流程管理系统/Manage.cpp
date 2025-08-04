@@ -32,9 +32,11 @@ int main() {
 			break;
 		case 2:
 			//查看往届记录
+			manager.showRecord();
 			break;
 		case 3:
 			//清空记录
+			manager.clearRecord();
 			break;
 		case 0:
 			//退出系统
