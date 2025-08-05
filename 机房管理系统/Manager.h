@@ -1,6 +1,11 @@
 #pragma once
 #include <iostream>
+#include <fstream>
+#include "globalFile.h"
 #include "Identity.h"
+#include "Student.h"
+#include "Teacher.h"
+#include <vector>
 using namespace std;
 
 class Manager : public Identity {
@@ -9,10 +14,10 @@ public:
 	Manager();
 
 	// 有参构造
-	Manager(string name, int pwd);
+	Manager(string name, string pwd);
 
 	// 操作菜单
-	virtual void operMenu() = 0; // 纯虚函数，操作菜单
+	virtual void operMenu(); // 纯虚函数，操作菜单
 
 	//添加账号
 	void addPerson();
@@ -26,5 +31,12 @@ public:
 	// 清空预约
 	void cleanFile();
 
+	//初始化人员信息容器
+	void initVector();
+
+	//学生容器
+	vector<Student> vStu;
+	//教师容器
+	vector<Teacher> vTea;
 	
 };

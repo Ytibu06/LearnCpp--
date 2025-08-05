@@ -9,10 +9,10 @@ public:
 	Teacher();
 	
 	// 有参构造
-	Teacher(int empId, string name, int pwd);
+	Teacher(int empId, string name, string pwd);
 	
 	// 操作菜单
-	virtual void operMenu() = 0; // 纯虚函数，操作菜单
+	virtual void operMenu(); // 纯虚函数，操作菜单
 	
 	// 查看所有预约
 	void showAllOrder();

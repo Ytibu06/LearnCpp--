@@ -6,7 +6,7 @@ Teacher::Teacher() {
 }
 
 // 有参构造
-Teacher::Teacher(int empId, string name, int pwd) {
+Teacher::Teacher(int empId, string name, string pwd) {
 
 	this->Name = name; // 设置姓名
 	this->Pwd = pwd;   // 设置密码
