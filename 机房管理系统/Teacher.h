@@ -1,6 +1,8 @@
 #pragma once
 #include <iostream>
 #include <string>
+#include <vector>
+#include "orderFile.h"
 #include "Identity.h"
 using namespace std;
 

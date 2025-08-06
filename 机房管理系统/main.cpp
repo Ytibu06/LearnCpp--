@@ -44,6 +44,38 @@ void studentMenu(Identity*& student) {
 	}
 }
 
+//教师菜单界面
+void teacherMenu(Identity*& teacher){
+
+	while (true) {
+
+		//菜单调用
+		teacher->operMenu();
+		Teacher* tea = (Teacher*)teacher;
+
+		//用户选择监听
+		int select = 0;
+		cin >> select;
+
+		if (select == 1) {
+			tea->showAllOrder();
+		}
+		else if (select == 2) {
+			tea->validOrder();
+		}
+		else if (select == 0) {
+			delete teacher;
+			cout << "注销成功" << endl;
+			system("pause");
+			system("cls");
+			return;
+		}
+		else {
+			cout << "输入错误重新输入" << endl;
+		}
+	}
+}
+
 //管理员菜单展示
 void managerMenu(Identity*& manager) {
 
@@ -130,7 +162,7 @@ void loginIn(string fileName, int type) {
 
 		while (ifs >> fid && ifs >> fName && ifs >> fPassword) {
 			if(fid == id && fName == name && fPassword == password) {
-				cout << "登录成功" << endl;
+
 				person = new Student(id, name, password);
 				studentMenu(person);
 				break;
@@ -144,10 +176,10 @@ void loginIn(string fileName, int type) {
 		string fPassword;
 
 		while (ifs >> fEmpId && ifs >> fName && ifs >> fPassword) {
+
 			if (fEmpId == id && fName == name && fPassword == password) {
-				cout << "登录成功" << endl;
 				person = new Teacher(id, name, password);
-				//managerMenu(person);
+				teacherMenu(person);
 				break;
 			}
 		}

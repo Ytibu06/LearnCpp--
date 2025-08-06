@@ -191,10 +191,6 @@ bool Manager::checkRepeat(int id, int type) {
 	return false;
 }
 
-//去重
-
-
-
 //查看所有账号
 void printStudent(Student &s) {
 	cout << "学号：" << s.Id << "姓名:" << s.Name << endl;
