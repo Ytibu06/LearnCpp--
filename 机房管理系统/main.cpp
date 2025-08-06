@@ -1,13 +1,50 @@
 #include <iostream>
-using namespace std;
-#include "Identity.h"
 #include "Student.h"
 #include "Teacher.h"
 #include "Manager.h"
 #include "globalFile.h"
 #include <fstream>
+using namespace std;
 
-//多态菜单展示
+//学生菜单界面
+void studentMenu(Identity*& student) {
+
+	while (true) {
+
+		//菜单调用
+		student->operMenu();
+		Student* stu = (Student*)student;
+
+		//用户选择监听
+		int select = 0;
+		cin >> select;
+
+		if (select == 1) {
+
+			stu->applyOrder();
+		}else if (select == 2) {
+
+			stu->showMyOrder();
+		}else if(select == 3) {
+
+			stu->showAllOrder();
+		}else if (select == 4) {
+
+			stu->cancelOrder();
+		}
+		else if (select == 0) {
+			delete student;
+			system("pause");
+			system("cls");
+			return;
+		}
+		else {
+			cout << "输入错误重新输入" << endl;
+		}
+	}
+}
+
+//管理员菜单展示
 void managerMenu(Identity*& manager) {
 
 	while (true) {
@@ -22,22 +59,18 @@ void managerMenu(Identity*& manager) {
 		cin >> select;
 		if (select == 1) {
 			//添加账号
-			cout << "添加账号" << endl;
 			man->addPerson();
 		}
 		else if (select == 2) {
 			//查看账号
-			cout << "查看账号" << endl;
 			man->showAllPerson();
 		}
 		else if (select == 3) {
 			//查看机房
-			cout << "查看机房" << endl;
 			man->showAllRoom();
 		}
 		else if (select == 4) {
 			//清空预约
-			cout << "清空预约" << endl;
 			man->cleanFile();
 		}
 		else {
@@ -84,9 +117,9 @@ void loginIn(string fileName, int type) {
 	}
 	cout << "请输入用户名：";
 	cin >> name;
-	cout << "请输入密码：" << endl;
+	cout << "请输入密码：";
 	cin >> password;
-
+	system("cls");
 	//信息验证
 	if(type == 1) {
 
@@ -99,8 +132,8 @@ void loginIn(string fileName, int type) {
 			if(fid == id && fName == name && fPassword == password) {
 				cout << "登录成功" << endl;
 				person = new Student(id, name, password);
-				managerMenu(person);
-				return;
+				studentMenu(person);
+				break;
 			}
 		}
 	} else if(type == 2) {
@@ -114,8 +147,8 @@ void loginIn(string fileName, int type) {
 			if (fEmpId == id && fName == name && fPassword == password) {
 				cout << "登录成功" << endl;
 				person = new Teacher(id, name, password);
-				managerMenu(person);
-				return;
+				//managerMenu(person);
+				break;
 			}
 		}
 		
@@ -125,16 +158,15 @@ void loginIn(string fileName, int type) {
 		string fName;
 		string fPassword;
 
-		cout << "！！！！！！！！" << endl;
 		while (ifs >> fName && ifs >> fPassword) {
 			if (fName == name && fPassword == password) {
 				cout << "！！！ 管理员登陆 ！！！" << endl;
 				person = new Manager(name, password);
 				managerMenu(person);
-				return;
+				break;
 			}
 			else {
-				cout << "管理员登陆失败！！！" << endl;
+				cout << "管理员登陆失败，强制返回上一级！！！" << endl;
 				return;
 			}
 		}

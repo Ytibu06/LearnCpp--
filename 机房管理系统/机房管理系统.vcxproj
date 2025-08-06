@@ -123,17 +123,18 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Identity.h" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Manager.cpp" />
     <ClCompile Include="Student.cpp" />
     <ClCompile Include="Teacher.cpp" />
-    <ClCompile Include="Teacher.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="computerRoom.h" />
     <ClInclude Include="globalFile.h" />
+    <ClInclude Include="Identity.h" />
     <ClInclude Include="Manager.h" />
     <ClInclude Include="Student.h" />
+    <ClInclude Include="Teacher.h" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="admin.txt" />
